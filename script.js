@@ -98,10 +98,204 @@ switch(day)
 }   */
 
 
-const age=11;
+// const age=11;
 
-age>=18 ? console.log('i like to drink wine'):console.log('i like to drink Water');
+// age>=18 ? console.log('i like to drink wine'):console.log('i like to drink Water');
 
-const drink= age>=18 ?'Wine':'drink';
+// const drink= age>=18 ?'Wine':'drink';
 
-console.log(drink);
+// console.log(drink);
+
+// 'use strict';
+
+// let hasDriversLicence=false;
+// const passTest=true;
+
+// if(passTest) hasDriverLicence=true;
+// if (hasDriversLicence) console.log("i can drive :D");
+
+// function logger()
+// {
+//     console.log("My name is Saad");
+// }
+
+
+// logger();
+// logger();
+// logger();
+// logger();
+
+
+// function foodProcessor(apples,oranges)
+// {
+//     console.log(apples,oranges);
+//     const juice = `Juice with ${apples} apples and ${oranges} oranges.`;
+//     return juice;
+// }
+
+// const result=foodProcessor(5,0);
+
+// console.log(result);
+// console.log(foodProcessor(18,6));
+
+// function calcAge1(birthYear){
+//     return 2037 - birthYear;
+// }
+
+// const calcAge2 =function (birthYear){
+//     return 2037 - birthYear;
+// }
+// const age1= calcAge2(1991);
+// const age2= calcAge2(1992);
+
+// console.log(age1,age2);
+
+// const calcAge2 =function (birthYear){
+//     return 2037 - birthYear;
+// }
+
+// const calcAge32 = birthYear=>2037-birthYear;
+
+// const Age=calcAge32(1998);
+
+// const yearsUntilRetirement=(birthYear,firstName) =>
+// {
+//     const age =2037-birthYear;
+//     const retirement=65- age;
+//     //return retirement;
+
+//     return `${firstName} retires in ${retirement} years`;
+// }
+
+
+// console.log(yearsUntilRetirement(1991,'Saad'));
+// console.log(yearsUntilRetirement(1980,'Ahmed'));
+
+// function cutFruitPieces(fruit){
+//     return fruit*4;
+// }
+
+// function fruitProcessor(apples,oranges)
+// {
+//     const applePieces=cutFruitPieces(apples);
+//     const orangePieces=cutFruitPieces(oranges);
+
+//     console.log(apples,oranges);
+//     const juice = `Juice with ${applePieces} apples pieces and ${orangePieces} oranges pieces.`;
+//     return juice;
+// }
+
+// console.log(fruitProcessor(2,3));
+
+// const DolphinsAvg = calcAvg (score1,score2,score3) => return (score1+score2+score3)/3;
+
+// calcAvg(44,23,71)
+
+
+// const friend1= 'Micheal';
+// const friend2= 'dar';
+// const friend3= 'Peter';
+
+// const friends=['Micheal','Dar','Peter'];
+// console.log(friends);
+
+// console.log(friends[0]);
+// console.log(friends[friends.length -1]);
+
+// friends[2]='Jay';
+// console.log(friends);
+
+
+// const calcAge =function (birthYear){
+//     return 2037 - birthYear;
+// }
+
+
+// const years= [1990,1967,2000,2010,2018];
+
+// const age1=calcAge(years[0]);
+// const age2=calcAge(years[1]);
+// const age3=calcAge(years[2]);
+// console.log(age1,age2,age3);
+
+// const ages=[calcAge(years[0]),calcAge(years[1]),calcAge(years[2])];
+// console.log(ages);
+
+// const friends=['Micheal','Dar','Peter'];
+// const newLength=friends.push("Jay");
+
+// console.log(friends);
+// console.log(newLength);
+
+// friends.unshift("Saad");
+// console.log(friends);
+
+// const popped=friends.pop();
+// console.log(popped);
+// console.log(friends);
+
+// const shifted=friends.shift();
+// console.log(friends);
+// console.log(shifted);
+
+// console.log(friends.indexOf('Dar'));
+
+// const bills =[125,555,44];
+
+// function calcTip (bill){
+//     let tip;
+//     if ((bill >=50) &&(bill <=300))
+//     {
+//           tip= bill *0.15;
+//     }
+//     else
+//     {
+//          tip= bill *0.20;
+//     }
+
+//     return tip
+// }
+
+// const tips=[calcTip(bills[0]),calcTip(bills[1]),calcTip(bills[2])];
+
+
+// const totals=[bills,tips];
+// console.log(totals);
+
+// const jonasArray=[
+//     'jonas',
+//     'schmidt',
+//     2037-1991,
+//     'teacher',
+//     ['Micaheal','steven','peter']
+// ];
+
+// const jonass ={
+//     firstName:'Saad',
+//     lastName:"Dar",
+//     age:2037-1201,
+//     job:'teacher',
+//     friends:['Micaheal','steven','peter']
+// }; 
+
+// console.log(jonass);
+// console.log(jonass.lastName);
+// console.log(jonass['lastName']);
+
+// const nameKey='Name';
+// console.log(jonass['firstName'+nameKey]);
+// const interestedIn=prompt('What do u want to know about jonas choose');
+// console.log(jonass[interestedIn]);
+
+
+// const jonass ={
+//     firstName:'Saad',
+//     lastName:"Dar",
+//     age:2037-1201,
+//     job:'teacher',
+//     friends:['Micaheal','steven','peter'],
+//     hasDriversLicence:true,
+//     calcAge: function(birthYear){
+//         return 2037-birthYear;
+//     }
+// }; 
