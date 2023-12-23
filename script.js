@@ -313,36 +313,74 @@ switch(day)
 // console.log(jonass.calcAge);
 
 
-const mark ={
-    fullName:'Mark Miller',
-    mass:78,
-    height:1.69,
-    calcBMI: function()
-    {
-        this.BMI=this.mass/(this.height**this.height);
-        return this.BMI;
-    }
-};
-const john ={
-    fullName:'John Smith',
-    mass:92,
-    height:1.95,
-    calcBMI: function()
-    {
-        this.BMI=this.mass/(this.height**this.height);
-        return this.BMI;
-    }
-};
+// const mark ={
+//     fullName:'Mark Miller',
+//     mass:78,
+//     height:1.69,
+//     calcBMI: function()
+//     {
+//         this.BMI=this.mass/(this.height**this.height);
+//         return this.BMI;
+//     }
+// };
+// const john ={
+//     fullName:'John Smith',
+//     mass:92,
+//     height:1.95,
+//     calcBMI: function()
+//     {
+//         this.BMI=this.mass/(this.height**this.height);
+//         return this.BMI;
+//     }
+// };
 
-john.calcBMI();
-mark.calcBMI();
+// john.calcBMI();
+// mark.calcBMI();
 
 
-if(john.BMI > mark.BMI)
-{
-    console.log(`${john.fullName}'s BMI (${john.BMI}) is higher than ${mark.fullName}'s (${mark.BMI})`);
-}
-else 
-{
-    console.log(`${mark.fullName}'s BMI (${mark.BMI}) is higher than ${john.fullName}'s (${john.BMI})`);
-}
+// if(john.BMI > mark.BMI)
+// {
+//     console.log(`${john.fullName}'s BMI (${john.BMI}) is higher than ${mark.fullName}'s (${mark.BMI})`);
+// }
+// else 
+// {
+//     console.log(`${mark.fullName}'s BMI (${mark.BMI}) is higher than ${john.fullName}'s (${john.BMI})`);
+// }
+
+
+// for (let rep=1;rep <=10;rep++)
+// {
+//     console.log(`lifting the weight with repitition ${rep} `);
+// }
+
+
+// const bills=[22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+// const tips =[];
+// const totals=[];
+
+
+// function calcTip (bill){
+//      let tip;
+//      if ((bill >=50) &&(bill <=300))
+//      {
+//            tip= bill *0.15;
+//      }
+//      else
+//      {
+//           tip= bill *0.20;
+//      }
+
+//      return tip
+//  }
+ 
+//  for(let rep=0;rep<=9;rep++)
+//  {
+//      const tip=calcTip(bills[rep]);
+//      tips.push(tip);
+     
+//      const bill=bills[rep]+tip;
+//      totals.push(bill);
+//  }
+ 
+ 
+ 
