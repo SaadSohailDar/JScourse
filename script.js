@@ -292,10 +292,57 @@ switch(day)
 //     firstName:'Saad',
 //     lastName:"Dar",
 //     age:2037-1201,
+//     birthYear:1991,
 //     job:'teacher',
 //     friends:['Micaheal','steven','peter'],
 //     hasDriversLicence:true,
-//     calcAge: function(birthYear){
-//         return 2037-birthYear;
-//     }
+//     // calcAge: function(birthYear){
+//     //     return 2037-birthYear;
+//     // }
+//     calcAge: function(){
+//          this.age= 2037-this.birthYear;
+//          return this.age;
+//      }
+
 // }; 
+
+
+// console.log(jonass.calcAge());
+// console.log(jonass.calcAge);
+// console.log(jonass.calcAge);
+// console.log(jonass.calcAge);
+
+
+const mark ={
+    fullName:'Mark Miller',
+    mass:78,
+    height:1.69,
+    calcBMI: function()
+    {
+        this.BMI=this.mass/(this.height**this.height);
+        return this.BMI;
+    }
+};
+const john ={
+    fullName:'John Smith',
+    mass:92,
+    height:1.95,
+    calcBMI: function()
+    {
+        this.BMI=this.mass/(this.height**this.height);
+        return this.BMI;
+    }
+};
+
+john.calcBMI();
+mark.calcBMI();
+
+
+if(john.BMI > mark.BMI)
+{
+    console.log(`${john.fullName}'s BMI (${john.BMI}) is higher than ${mark.fullName}'s (${mark.BMI})`);
+}
+else 
+{
+    console.log(`${mark.fullName}'s BMI (${mark.BMI}) is higher than ${john.fullName}'s (${john.BMI})`);
+}
