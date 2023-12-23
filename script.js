@@ -1,3 +1,4 @@
+'use strict';
 /*let js = 'amazing';
 console.log(40+8+23-10);
 console.log("Jonas");
@@ -384,3 +385,15 @@ switch(day)
  
  
  
+//Dom manipulation high score number game
+
+console.log(document.querySelector('.message').textContent);
+document.querySelector('.message').textContent='Correct Number!';
+console.log(document.querySelector('.message').textContent);
+
+
+document.querySelector('.number').textContent=13;
+document.querySelector('.score').textContent=10;
+
+document.querySelector('.guess').value=23;
+console.log(document.querySelector('.guess').value);
