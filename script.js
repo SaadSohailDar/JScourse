@@ -38,83 +38,111 @@ const restaurant = {
   },
 };
 
+//1)Destructuring 
 
+//spread because of right of assignment operator
+const arr=[1,2,...[3,4]];
 
-const ingredients=[
-  prompt(`Lets\'s make Pasta! Ingredient 1?`),
-  prompt(`Lets\'s make Pasta! Ingredient 2?`),
-  prompt(`Lets\'s make Pasta! Ingredient 3?`)
-];
+//rest because oin left
+const [a,b, ...others]=[1,2,3,4,5];
+console.log(a,b,others);
 
-console.log(ingredients);
-
-restaurant.orderPasta(...ingredients);
-
-restaurant.orderDelivery({
-  time:'22:30',
-  address:'Falcon Complex 21',
-  mainIndex: 2,
-  starterIndex: 2 ,
-})
+const [Pizza, ,Risotto,...other]=[...restaurant.mainMenu,...restaurant.starterMenu]
+console.log(Pizza,Risotto,other);
 
 //objects
-const newRestaurant={FoundedIn:1998 ,...restaurant,Founder:'saad',}
-console.log(newRestaurant);
+const {sat,...weekDays}=restaurant.openingHours;
+console.log(weekDays);
 
-const {name,openingHours,categories}=restaurant;
-console.log(name,openingHours,categories);
+//2)Functions
+const add = function (...numbers){
+  let sum=0;
+  for(let i=0;i<numbers.length;i++) sum+=numbers[i];
+  console.log(sum);
+};
 
-
-const {name: restaurantName,openingHours:hours,categories:tags}=restaurant;
-console.log(restaurantName,hours,tags);
-
-
-//setting default value 
-const {menu=[], starterMenu:starters=[]}=restaurant;
-console.log(menu,starters);
-
-//Mutating variabkles
-let a =111;
-let b=999;
-const obj={a:23,b:7,c:15};
-
-({a,b}=obj);
-console.log(a,b);
-
-//nested objects
-const {
-  fri:{open:o,close:c},
-} = openingHours;
-console.log(o,c);
+add(2,3);
+add(5,7,3,2);
 
 
-const arr=[7,8,9];
 
-const badNewArr=[1,2,arr[0],arr[1],arr[2]];
-console.log(badNewArr);
 
 //Spread Operator
-const newArr=[1,2, ...arr];
-console.log(newArr);
+// const ingredients=[
+//   prompt(`Lets\'s make Pasta! Ingredient 1?`),
+//   prompt(`Lets\'s make Pasta! Ingredient 2?`),
+//   prompt(`Lets\'s make Pasta! Ingredient 3?`)
+// ];
+
+// console.log(ingredients);
+
+// restaurant.orderPasta(...ingredients);
+
+// restaurant.orderDelivery({
+//   time:'22:30',
+//   address:'Falcon Complex 21',
+//   mainIndex: 2,
+//   starterIndex: 2 ,
+// })
+
+// //objects
+// const newRestaurant={FoundedIn:1998 ,...restaurant,Founder:'saad',}
+// console.log(newRestaurant);
+
+// const {name,openingHours,categories}=restaurant;
+// console.log(name,openingHours,categories);
 
 
-console.log(...newArr);
-
-const newMenu=[...restaurant.mainMenu,'sushi'];
-console.log(newMenu);
-
-//Copy Array
-const mainMenuCopy={...restaurant.mainMenu};
+// const {name: restaurantName,openingHours:hours,categories:tags}=restaurant;
+// console.log(restaurantName,hours,tags);
 
 
-//join arrays
-const manu=[...restaurant.mainMenu,...restaurant.starterMenu];
-console.log(manu);
+// //setting default value 
+// const {menu=[], starterMenu:starters=[]}=restaurant;
+// console.log(menu,starters);
 
-const str= 'Saad';
-const Letters= [...str,' ','S.'];
-console.log(Letters);
-console.log(...str);
+// //Mutating variabkles
+// let a =111;
+// let b=999;
+// const obj={a:23,b:7,c:15};
+
+// ({a,b}=obj);
+// console.log(a,b);
+
+// //nested objects
+// const {
+//   fri:{open:o,close:c},
+// } = openingHours;
+// console.log(o,c);
+
+
+// const arr=[7,8,9];
+
+// const badNewArr=[1,2,arr[0],arr[1],arr[2]];
+// console.log(badNewArr);
+
+// //Spread Operator
+// const newArr=[1,2, ...arr];
+// console.log(newArr);
+
+
+// console.log(...newArr);
+
+// const newMenu=[...restaurant.mainMenu,'sushi'];
+// console.log(newMenu);
+
+// //Copy Array
+// const mainMenuCopy={...restaurant.mainMenu};
+
+
+// //join arrays
+// const manu=[...restaurant.mainMenu,...restaurant.starterMenu];
+// console.log(manu);
+
+// const str= 'Saad';
+// const Letters= [...str,' ','S.'];
+// console.log(Letters);
+// console.log(...str);
 
 
 
