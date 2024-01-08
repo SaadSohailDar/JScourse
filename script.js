@@ -38,31 +38,54 @@ const restaurant = {
   },
 };
 
-//1)Destructuring 
+restaurant.numGuests=0;
+const guests = restaurant.numGuests ||10;
+console.log(guests);
 
-//spread because of right of assignment operator
-const arr=[1,2,...[3,4]];
 
-//rest because oin left
-const [a,b, ...others]=[1,2,3,4,5];
-console.log(a,b,others);
+const guestsCorrect = restaurant.numGuests ?? 10;
+console.log(guestsCorrect);
 
-const [Pizza, ,Risotto,...other]=[...restaurant.mainMenu,...restaurant.starterMenu]
-console.log(Pizza,Risotto,other);
 
-//objects
-const {sat,...weekDays}=restaurant.openingHours;
-console.log(weekDays);
+// //use any data type , return any data type , short circuiting
+// console.log(3 ||'Jonas');
 
-//2)Functions
-const add = function (...numbers){
-  let sum=0;
-  for(let i=0;i<numbers.length;i++) sum+=numbers[i];
-  console.log(sum);
-};
 
-add(2,3);
-add(5,7,3,2);
+// const guest1=restaurant.numGuests ? restaurant.numGuests:10;
+// console.log(guest1);
+
+// const guests2= restaurant.numGuests || 10;
+// console.log(guests2);
+
+// console.log("_________And________");
+// console.log(0 && 'Jonas');
+// console.log(7 && 'Jonas');
+
+// //1)Destructuring 
+
+// //spread because of right of assignment operator
+// const arr=[1,2,...[3,4]];
+
+// //rest because oin left
+// const [a,b, ...others]=[1,2,3,4,5];
+// console.log(a,b,others);
+
+// const [Pizza, ,Risotto,...other]=[...restaurant.mainMenu,...restaurant.starterMenu]
+// console.log(Pizza,Risotto,other);
+
+// //objects
+// const {sat,...weekDays}=restaurant.openingHours;
+// console.log(weekDays);
+
+// //2)Functions
+// const add = function (...numbers){
+//   let sum=0;
+//   for(let i=0;i<numbers.length;i++) sum+=numbers[i];
+//   console.log(sum);
+// };
+
+// add(2,3);
+// add(5,7,3,2);
 
 
 
